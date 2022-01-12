@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMB-QC-owp">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMB-QC-owp" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="87" y="130" width="240" height="158"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fpg-nh-JZ4">
@@ -70,7 +70,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZs-oC-DAN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZs-oC-DAN" customClass="SpringButton" customModule="Spring">
                                 <rect key="frame" x="87" y="686" width="240" height="31"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
@@ -87,7 +87,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="runAnimationButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="XNj-dg-Bfe"/>
+                                    <action selector="runAnimationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r3u-15-LsD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -103,13 +103,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animationView" destination="eMB-QC-owp" id="9Cu-3w-ko7"/>
                         <outlet property="curveLabel" destination="lBG-94-I2g" id="A2Y-2U-1FT"/>
                         <outlet property="delayLabel" destination="VIN-fz-OTv" id="jlh-ci-oVW"/>
                         <outlet property="durationLabel" destination="O3M-GE-LNC" id="Qtb-cD-G4Z"/>
                         <outlet property="forceLabel" destination="DZe-cs-ImZ" id="poD-mQ-Y2r"/>
                         <outlet property="presetLabel" destination="Wbc-Wl-AH4" id="19r-fh-4cz"/>
-                        <outlet property="runButtonLabel" destination="AZs-oC-DAN" id="3kj-1f-dSU"/>
-                        <outlet property="viewLabel" destination="eMB-QC-owp" id="iaQ-Jd-6ce"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
