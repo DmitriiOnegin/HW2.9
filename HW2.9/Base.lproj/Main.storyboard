@@ -87,7 +87,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="runAnimationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r3u-15-LsD"/>
+                                    <action selector="runAnimationButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tjw-7D-3iY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -109,6 +109,7 @@
                         <outlet property="durationLabel" destination="O3M-GE-LNC" id="Qtb-cD-G4Z"/>
                         <outlet property="forceLabel" destination="DZe-cs-ImZ" id="poD-mQ-Y2r"/>
                         <outlet property="presetLabel" destination="Wbc-Wl-AH4" id="19r-fh-4cz"/>
+                        <outlet property="runButtonLabel" destination="AZs-oC-DAN" id="y2W-XJ-3lE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

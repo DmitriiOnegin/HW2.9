@@ -16,16 +16,27 @@ class ViewController: UIViewController {
     @IBOutlet weak var forceLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var delayLabel: UILabel!
-    
+    @IBOutlet weak var runButtonLabel: SpringButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //runButtonLabel.titleLabel?.text =
     }
 
-    @IBAction func runAnimationButton(_ sender: SpringButton) {
+    @IBAction func runAnimationButton() {
+        animationView.animation = "pop"
+        animationView.curve = "easeInOut"
+        animationView.force = 2
+        animationView.duration = 1
+        animationView.delay = 0.3
+        
+        animationView.animate()
+        
+        runButtonLabel.setTitle("pop", for: .normal)
         
     }
+    
     
     
     
